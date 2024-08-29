@@ -1,0 +1,219 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="header.css">
+ <link rel="stylesheet" href="footer.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .signup {
+      width: 100%;
+      height: 130vh;
+      background-color: #0E0A48;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  .signup-hd{
+    width: 100%;
+    height: 5vh;
+    
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+    .signupform {
+      width: 500px;
+      height: 620px;
+      border: 2px solid #FF66F5;
+    margin-top: 40px;
+    }
+
+    .usersignup {
+      display: flex;
+      width: 80%;
+      margin-left: 50px;
+      
+      flex-direction: column;
+     
+    }
+
+    .usersignup label {
+      color: white;
+      font-size: 20px;
+      margin-top: 30px;
+    }
+
+    .usersignup input {
+      height: 6vh;
+      font-size: 16px;
+      padding-left: 10px;
+      background-color: transparent;
+      border: 2px solid white;
+      margin-top: 10px;
+      color: white;
+    }
+
+    .signupbtn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+      flex-direction: column;
+    }
+
+    .signupbtn button {
+      width: 100px;
+      height: 5vh;
+      background-color: #FF66F5;
+      border: none;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+
+    .signupbtn button:hover {
+      background-color: white;
+    }
+
+    .signupbtn p {
+      margin-top: 20px;
+      color: white;
+    }
+
+    .signupbtn a {
+      color: #FF66F5;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+   
+    
+    @media screen and (max-width:522px) {
+      .signup {
+      width: 100%;
+      height: 120vh;
+      background-color: #0E0A48;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+      .signupform {
+        width: 330px;
+        
+        border: 2px solid #FF66F5;
+      }
+
+      .signupbtn p {
+        font-size: 13px;
+        color: white;
+      }
+      .usersignup {
+    
+      margin-left: 40px;
+     
+    }
+    }
+  </style>
+</head>
+
+<body>
+  
+
+  <div class="navbar">
+    <input type="checkbox" name="" id="click">
+     <div class="logo">
+        <a href="index.html"><i class="fa-solid fa-masks-theater"></i></a>
+        <a href="index.html"> Essence Drive-In</a>
+     </div>
+     <div class="menu">
+        <a  href="index.html" >Home</a>
+        <a   href="about.html" >About</a>
+        <a   href="contact.html" >Contact</a>
+        <a href="login.html"><span><i class="fa-solid fa-user"></i></span>Login</a>
+     </div>
+     <div class="line">
+      <label for="click" id="hamburger"><i class="fa-solid fa-bars"></i></label>
+      <i id="cancel" class="fa-solid fa-xmark"></i>
+     </div>
+  </div>
+  <div class="signup">
+      <div class="signup-hd">
+        <h1>Sign up</h1>
+      </div>
+    <div class="signupform">
+      <form method="post">
+        <div class="usersignup">
+
+          <label for="">User name</label>
+          <input type="text" name="name" id="" placeholder="Enter your username">
+          <label for="">Email*</label>
+         <input type="email" name="email" id="" placeholder="Enter your email">
+          <label for="">Password</label>
+          <input type="password" name="password" id="" placeholder="Enter your Password">
+          <label for="">Confirm Password</label>
+          <input type="password" name="conpassword" id="" placeholder="Confirm your Password">
+          <div class="signupbtn">
+            <button>Signup</button>
+            <p>Already have any account?<a href="login.html">Login</a></p>
+          </div>
+
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footerrow">
+     <div class="footerlogo">
+         <a href=""><i class="fa-solid fa-masks-theater"></i></a>
+         <a href=""> Essence Drive-In</a>
+      </div>
+      <div class="footermenu">
+         <h3>Quick Menu</h3>
+         <a href="index.html">Home</a>
+         <a href="about.html">About</a>
+         <a href="contact.html">Contact</a>
+         <a href="login.html">Login</a>
+      </div>
+      <div class="footercontact">
+         <h3>Contact</h3>
+           <p>500 Terry Francine Street 
+             San Francisco, CA 94158
+             info@mysite.com
+             Tel: 123-456-7890</p>
+      </div>
+      <div class="footerlinks">
+         <a href="#"><i class="fa-brands fa-instagram"></i></a>
+         <a href="#"><i class="fa-brands fa-facebook"></i></a>
+         <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+    </div>
+    <hr>
+    <div class="footercopy">
+     <p>@All copyright reserved by Vikas Chauhan</p>
+    </div>
+ </div>
+</body>
+<script src="logic.js"></script>
+
+</html>
