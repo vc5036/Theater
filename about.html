@@ -1,0 +1,288 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="header.css">
+   <link rel="stylesheet" href="footer.css">
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    width: 100%;
+    height: 100%;
+   
+}
+.about{
+    width: 100%;
+  
+    background-color: #0E0A48;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.about h1{
+    color: white;
+    font-size: 40px;
+    margin-top: 60px;
+}
+.about-p{
+    width: 60vw;
+  margin-top: 10px;
+}
+.about p{
+    color: white;
+    font-size: 18px;
+}
+.about img{
+    margin-top: 50px;
+  
+}
+
+.aboutlist{
+    width: 85%;
+    height: 65vh;
+    
+    display: flex;
+    margin-top: 80px;
+    background-color: #0E0A48;
+    margin-bottom: 50px;
+}
+.love{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #D15FF5;
+}
+.love h1{
+    color: #D15FF5;
+    font-size: 30px;
+    width: 80%;
+}
+.love p{
+    color: white;
+    font-size: 16px;
+    margin-bottom: 15px;
+   text-align: justify;
+   width: 80%;
+   margin-top: 15px;
+}
+.house{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px solid #D15FF5;
+}
+.house h1{
+ font-size: 30px;
+ color: #D15FF5;
+ margin-bottom: 10px;
+}
+.house li{
+    color: white;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+@media screen and (max-width:1220px){
+    .love h1{
+        
+        font-size: 30px;
+        width: 70%;
+    }
+    
+   
+}
+@media screen and (max-width:1140px){
+    .love h1{
+        font-size: 28px;
+    }
+    .love p{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width:980px){
+    .aboutlist{
+        width: 100%;
+        height: 140vh;
+       align-items: center;
+       justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    
+    .love{
+        width: 85%;
+        height:55vh;
+        
+
+       
+        }
+        
+        .love h1{
+            width: 95%;
+            font-size: 25px;
+            margin-top: 1px;
+            text-align: center;
+        }
+        .love p{
+            width: 90%;
+            font-size: 14px;
+
+        }
+    .house{
+        margin-top: 30px;
+        width: 85%;
+        height: 55vh;
+    }
+  .house li{
+    font-size: 17px;
+  }
+    .about img{
+        width: 600px;
+    }
+    
+}
+@media screen and (max-width:780px){
+    .about img{
+        width: 500px;
+    }
+    .love h1{
+        font-size: 30px;
+    }
+    .about h1{
+        font-size: 30px;
+    }
+    .about p{
+        font-size: 16px;
+        
+    }
+}
+@media screen and (max-width:780px){
+    .about img{
+        width: 400px;
+    }
+}
+@media screen and (max-width:490px){
+    .about h1{
+        font-size: 25px;
+    } 
+    .about-p{
+        width: 80%;
+    }
+    
+}
+@media screen and (max-width:450px){
+    .about h1{
+        font-size: 21px;
+    }
+    .about p{
+        font-size: 14px;
+        text-align: center;
+    } 
+    .about img{
+        width: 350px;
+    }
+}
+@media screen and (max-width:390px){
+    .about h1{
+        font-size: 20px;
+    }
+}
+</style>
+
+</head>
+<body>
+    <div class="navbar">
+        <input type="checkbox" name="" id="click">
+         <div class="logo">
+            <a href="index.html"><i class="fa-solid fa-masks-theater"></i></a>
+            <a href="index.html"> Essence Drive-In</a>
+         </div>
+         <div class="menu">
+            <a  href="index.html" >Home</a>
+            <a   href="about.html" >About</a>
+            <a   href="contact.html" >Contact</a>
+            <a href="login.html"><span><i class="fa-solid fa-user"></i></span>Login</a>
+         </div>
+         <div class="line">
+          <label for="click" id="hamburger"><i class="fa-solid fa-bars"></i></label>
+          <i id="cancel" class="fa-solid fa-xmark"></i>
+         </div>
+      </div>
+    <div class="about">
+    <h1>Essence Drive-In Movie Theater</h1>
+    <div class="about-p">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam optio mollitia a excepturi molestiae provident architecto aliquid dolorum odio praesentium maiores voluptatibus illo, quae officiis enim veniam! Necessitatibus quod ipsam veniam cupiditate aliquam at aliquid dolorem iste distinct </p>
+    </div>
+    
+    <img src="images/Screenshot_2024-04-12_115400-removebg-preview.png" alt="" width="800px">
+     <div class="aboutlist">
+        <div class="love">
+            <h1> Bringing Friends, Families and Loved Ones Together</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam libero provident corporis autem voluptatem nihil sit rerum eveniet perspiciatis sequi iure, dolore quas voluptate repellat, atque .</p>
+        </div>
+        <div class="house">
+            <h1>Theater Rules</h1>
+            
+                <li>I'm an item.</li>
+                <li>I'm an item.</li>
+                <li>I'm an item.</li>
+                <li>I'm an item.</li>
+                <li>I'm an item.</li>
+                <li>I'm an item.</li>
+        </div>
+     </div>
+    </div>
+    <div class="footer">
+        <div class="footerrow">
+         <div class="footerlogo">
+             <a href="index.html"><i class="fa-solid fa-masks-theater"></i></a>
+             <a href="index.html"> Essence Drive-In</a>
+          </div>
+          <div class="footermenu">
+             <h3>Quick Menu</h3>
+             <a href="index.html">Home</a>
+             <a href="about.html">About</a>
+             <a href="contact.html">Contact</a>
+             <a href="login.html">Login</a>
+          </div>
+          <div class="footercontact">
+             <h3>Contact</h3>
+               <p>500 Terry Francine Street 
+                 San Francisco, CA 94158
+                 info@mysite.com
+                 Tel: 123-456-7890</p>
+          </div>
+          <div class="footerlinks">
+             <a href="#"><i class="fa-brands fa-instagram"></i></a>
+             <a href="#"><i class="fa-brands fa-facebook"></i></a>
+             <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+        <hr>
+        <div class="footercopy">
+         <p>@All copyright reserved by Vikas Chauhan</p>
+        </div>
+     </div>
+</body>
+<script src="logic.js"></script>
+</html>
