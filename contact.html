@@ -1,0 +1,393 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="header.css">
+   <link rel="stylesheet" href="footer.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        .contact {
+            width: 100%;
+            background-color: #0E0A48;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        .head {
+            width: 100%;
+            height: 30vh;
+            background-color: #0E0A48;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .head h1 {
+            font-size: 45px;
+            color: white;
+        }
+
+        .para {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -30px;
+        }
+
+        .para p {
+            color: white;
+            font-size: 19px;
+            width: 600px;
+            margin-top: 7px;
+           
+        }
+
+        .form {
+            width: 70%;
+            height: 80vh;
+            border: 2px solid #FF66F5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 70px;
+        }
+
+        .name {
+            width: 100%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 15px;
+
+        }
+
+        .full {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .full label {
+            color: white;
+            font-size: 20px;
+        }
+
+        .full input {
+            width: 260px;
+            height: 8vh;
+            margin-top: 10px;
+            background-color: transparent;
+            border: 1px solid white;
+            padding-left: 10px;
+            color: white;
+            font-size: 20px;
+        }
+
+        #message {
+            width: 520PX;
+            height: 12VH;
+        }
+
+        .submit button {
+            width: 520px;
+            height: 8vh;
+            margin-top: 20px;
+            border: none;
+            background-color: #FF66F5;
+            color: #252989;
+            font-size: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        .submit button:hover {
+            background-color: white;
+        }
+
+        .location {
+            width: 70%;
+            height: 90vh;
+            color: white;
+            font-size: 20px;
+            background-color: #252989;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin-top: 100px;
+
+        }
+
+        .direction {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+        }
+        
+
+   
+        @media screen and (max-width:1100px){
+            .location h1{
+                font-size: 25px;
+            }
+        }
+        @media screen and (max-width:765px) {
+            .head h1 {
+                font-size: 25px;
+
+            }
+
+            .para p {
+                margin-top: 10px;
+                width: 500px;
+            }
+
+            .full input {
+                width: 220px;
+                height: 8vh;
+
+            }
+
+            #message {
+                width: 448px;
+                height: 8vh;
+            }
+
+            .submit button {
+                width: 448px;
+                height: 8vh;
+            }
+
+        }
+
+        @media screen and (max-width:660px) {
+            .head {
+                width: 100%;
+                height: 20vh;
+            }
+
+            .para p {
+                width: 450px;
+            }
+
+            .full input {
+                width: 180px;
+                height: 8vh;
+
+            }
+
+            #message {
+                width: 360px;
+                height: 8vh;
+            }
+
+            .submit button {
+                width: 360px;
+                height: 8vh;
+            }
+
+        }
+
+        @media screen and (max-width:540px) {
+            .para{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .para p {
+                width: 320px;
+                text-align: center;
+                font-size: 14px;
+            }
+
+            .form {
+                width: 100%;
+                height: 90vh;
+                border: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-top: 70px;
+            }
+
+            .name {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                margin-top: 10px;
+
+            }
+
+            .full {
+                margin-top: 10px;
+            }
+
+            .full input {
+                width: 260px;
+                height: 8vh;
+                margin-top: 10px;
+
+                padding-left: 10px;
+            }
+
+            #message {
+                width: 260px;
+                height: 12vh;
+            }
+
+            .submit button {
+                width: 260px;
+                height: 8vh;
+            }
+
+            .location {
+                width: 90%;
+                height: 50vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+        
+    <div class="navbar">
+        <input type="checkbox" name="" id="click">
+         <div class="logo">
+            <a href="index.html"><i class="fa-solid fa-masks-theater"></i></a>
+            <a href="index.html"> Essence Drive-In</a>
+         </div>
+         <div class="menu">
+            <a  href="index.html" >Home</a>
+            <a   href="about.html" >About</a>
+            <a   href="contact.html" >Contact</a>
+            <a href="login.html"><span><i class="fa-solid fa-user"></i></span>Login</a>
+         </div>
+         <div class="line">
+          <label for="click" id="hamburger"><i class="fa-solid fa-bars"></i></label>
+          <i id="cancel" class="fa-solid fa-xmark"></i>
+         </div>
+      </div>
+ 
+    <div class="contact">
+        <div class="head">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="para">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi perspiciatis eum facere eos saepe excepturi provident corporis aliquam recusandae quisquam inventore est tenetur unde, illo quis necessitatibus obcaecati sit, temporibus quo autem reprehenderit! Excepturi voluptates, ex quo odit dicta distinctio! Sint, </p>
+        </div>
+           
+        <div class="form">
+            <form action="" method="POST">
+
+            <div class="name">
+                <div class="full">
+                    <label for="">First Name</label>
+                    <input type="text" name="fname" id="">
+                </div>
+                <div class="full">
+                    <label for="">Last Name</label>
+                    <input type="text" name="lname" id="">
+                </div>
+            </div>
+            <div class="name">
+                <div class="full">
+                    <label for="">Email*</label>
+                   <input type="email" name="email" id="">
+                </div>
+                <div class="full">
+                    <label for="">Phone</label>
+                    <input type="tel" name="phone" id="">
+                </div>
+            </div>
+            <div class="name">
+                <div class="full">
+                    <label for="">Leave us a message</label>
+                    <input type="text" name="message" id="message">
+
+                </div>
+            </div>
+            <div class="submit">
+                <button>Submit</button>
+            </div>
+            </form>
+        </div>
+       
+        <div class="location">
+            <h1>Direction</h1>
+            <div class="direction">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13650.586167857115!2d77.74182190412395!3d31.202812339771167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3905faa9597cfd4d%3A0x1e8b0e09f860e6f8!2sRohru%2C%20Himachal%20Pradesh%20171207!5e0!3m2!1sen!2sin!4v1712916289575!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="footer">
+            <div class="footerrow">
+             <div class="footerlogo">
+                 <a href="index.html"><i class="fa-solid fa-masks-theater"></i></a>
+                 <a href="index.html"> Essence Drive-In</a>
+              </div>
+              <div class="footermenu">
+                 <h3>Quick Menu</h3>
+                 <a href="index.html">Home</a>
+                 <a href="about.html">About</a>
+                 <a href="contact.html">Contact</a>
+                 <a href="login.html">Login</a>
+              </div>
+              <div class="footercontact">
+                 <h3>Contact</h3>
+                   <p>500 Terry Francine Street 
+                     San Francisco, CA 94158
+                     info@mysite.com
+                     Tel: 123-456-7890</p>
+              </div>
+              <div class="footerlinks">
+                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </div>
+            </div>
+            <hr>
+            <div class="footercopy">
+             <p>@All copyright reserved by Vikas Chauhan</p>
+            </div>
+         </div>
+
+</body>
+
+<script src="logic.js"></script>
+</html>
