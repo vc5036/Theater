@@ -1,0 +1,692 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="header.css">
+   <link rel="stylesheet" href="footer.css">
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(23, 39, 103, 0.7),rgba(38, 52, 101, 0.7)),url(images/wallhaven-6kwypw_1920x1080.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about{
+    width: 700px;
+
+}
+.about h1{
+    font-size: 80px;
+    color: white;
+    font-family: cursive;
+    font-weight: 900;
+}
+.about p{
+    color: white;
+    font-size: 18px;
+    width: 95%;
+    margin-top: 20px;
+
+}
+
+.about button{
+    width: 180px;
+    height: 7vh;
+    border: none;
+    font-size: 20px;
+    color: white;
+    background-color: #FF66F5 ;
+    border-radius: 5px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.about button:hover{
+    background-color: white;
+    color: #3843CD;
+}
+.card{
+    width: 100%;
+    
+    background-color: #3843CD;
+    display: flex;
+    flex-direction: column;
+}
+.card h3{
+    font-size: 25px;
+    color: white;
+  
+}
+hr{
+    margin-top: 20px;
+    width: 97%;
+}
+.heading{
+   
+    margin-top: 90px;
+    margin-left: 50px;
+}
+.movies{
+    width: 100%;
+    display: flex;
+    
+    justify-content: space-evenly;
+    margin-top: 70px;
+    flex-wrap: wrap;
+}
+.box{
+    width: 320px;
+    height: 450px;
+    
+    margin-top: 40px;
+}
+.image{
+    width: 100%;
+    height: 370px;
+    
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.image img:hover{
+    filter: grayscale(20);
+    transform: translateY(-20px);
+ }
+.image h2{
+color: white;
+transition: 0.5s;
+
+}
+.image h3{
+    color: white;
+    transition: 0.5s;
+    
+    }
+.image h2:hover,.image h3:hover{
+    color: #bc51af;
+    cursor: pointer;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.btn button{
+    width: 200px;
+    height: 7vh;
+    border: none;
+    font-size: 20px;
+    color: white;
+    background-color: #FF66F5;
+    border-radius: 5px;
+   text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn button:hover{
+    background-color: white;
+    color: #3843CD;
+}
+
+.trailer{
+    width: 100%;
+    
+  background-color: #3843CD;
+  display: flex;
+  flex-direction: column;
+}
+.soon{
+    font-size: 18px;
+    margin-top: 80px;
+    margin-left: 50px;
+}
+
+.watch{
+    width: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ margin-top: 60px;
+ margin-bottom: 30px;
+ flex-wrap: wrap;
+}
+.first{
+    width: 230px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+hr{
+    margin-top: 50px;
+    width: 80%;
+    
+    
+}
+
+.first  button{
+    width: 80px;
+    height: 5vh;
+    background-color: #0E0A48;
+    font-size: 15px;
+    font-weight: 600;
+    color: #bc51af;
+    border: none;
+    border-radius: 5px;
+}
+
+.first h2{
+    color: white;
+    font-weight: 800;
+    font-size: 25px;
+    margin-top: 15px;
+}
+
+.first h4{
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+   
+}
+.first h4 span{
+    margin-right: 5px;
+}
+.work{
+    width: 100%;
+    
+    background-color: #0E0A48;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.write{
+    color: white;
+    font-size: 25px;
+    margin-top: 80px;
+}
+.row{
+    width: 100%;
+    display: flex;  
+   margin-top: 80px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #0E0A48;
+}
+.ticket{
+    width: 230px;
+    height: 450px;
+  margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ticket img{
+    margin-top: 60px;
+    transition:  all ease 0.6s;
+    cursor: pointer;
+}
+.ticket img:hover{
+    transform:rotateY(45deg);
+   
+}
+.ticket h2{
+    font-size: 32px;
+    color: #bc51af;
+    font-weight: 1600;
+    
+}
+
+.ticket h3{
+    font-size: 25px;
+    color: white;
+    margin-top: 30px;
+    font-weight: 600;
+}
+.ticket p{
+    font-size: 15px;
+    color: white;
+    margin-top: 10px;
+     text-align: center;
+}
+.meesagebox{
+    width: 100%;
+    background-color: #0E0A48;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.message{
+    width: 50%;
+     height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.message h2{
+    color: white;
+}
+.message p{
+    color: white;
+    margin-top: 20px;
+    width: 100%;
+    
+    text-align: center;
+}
+.message h1{
+    color: white;
+    margin-top: 30px;
+}
+.message input{
+    width: 100%;
+    height: 14vh;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    border: 3px solid #bc51af;
+    background-color: #401A3D;
+    
+    text-align: center;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.message input:hover{
+    background-color: #200a1e;
+}
+.message button{
+   
+    width: 100%;
+    height: 14vh;
+    font-size: 30px;
+    border: none;
+    background-color: #FF66F5;
+    color: #0E0A48;
+    font-weight: 600;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.message button:hover{
+    color:#3843CD;
+    background-color: white;
+    cursor: pointer;
+}
+.h-line{
+    width: 80%;
+    height: 2px;
+    margin-top: 40px;
+    background-color:#bc51af;
+    display: none;
+}
+
+    
+    
+@media screen and (max-width:720px){
+    
+    .main{
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(rgba(23, 39, 103, 0.7),rgba(38, 52, 101, 0.7)),url(images/wallhaven-6kwypw_1920x1080.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+
+    .about{
+        width: 400px;
+          
+    }
+    .about h1{
+        font-size: 40px;
+      
+    }
+    .message input{
+        font-size: 20px;
+        height: 10vh;
+    }
+    .message button{
+        font-size: 25px;
+        height: 10vh;
+    }
+    .image h2{
+      font-size: 20px;
+        
+        }
+        .image h3{
+         font-size: 20px;
+            
+            }
+   
+    
+}
+@media screen and (max-width:640px){
+      
+      .movies{
+   
+    margin-top: 20px;
+    
+}
+.heading{
+    margin-left: 1px;
+   margin-top: 60px;
+   
+   display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+
+}
+}
+
+@media screen and (max-width:460px){
+    .image img:hover{
+    filter: grayscale(0);
+    transform: translateY(-0px);
+ }
+    .ticket img:hover{
+    transform:rotateY(0deg);
+   
+}
+    .soon{
+    
+    margin-left: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.h-line{
+    display: block;
+}
+.row{
+    
+   margin-top: 30px;
+    
+}
+.ticket{
+  margin-top: 0px;
+    
+}
+.ticket img{
+    margin-top: 30px;
+    transition:  all ease 0.6s;
+}
+.message{
+    width: 70%;
+    margin-top: 1px;
+    
+}
+.first{
+    margin-top: 15px;
+}
+}
+@media screen and (max-width:420px){
+
+    .about{
+        width: 300px;
+          
+    }
+    .about h1{
+        font-size: 30px;
+      
+    }
+    .soon{
+      text-align: center;
+    }
+    .message{
+        width: 70%;
+       
+    }
+    
+}
+@media screen and (max-width:370px){
+    .main{
+       
+        height: 60vh;
+    }
+    .about{
+        width: 300px;
+          
+    }
+    .about h1{
+        font-size: 30px;
+      
+    }
+    .about p{
+        font-size: 15px;
+      
+    }
+    .about button{
+        width: 140px;
+        height: 5vh;
+      font-size: 15px;
+    }
+    
+
+    .message input{
+        font-size: 18px;
+        height: 8vh;
+    }
+    .message button{
+        font-size: 20px;
+        height: 8vh;
+    }
+    .message{
+       
+        margin-top: 5px;
+    }
+}
+
+
+
+</style>
+</head>
+
+<body>
+    
+  <div class="navbar">
+    <input type="checkbox" name="" id="click">
+     <div class="logo">
+        <a href=""><i class="fa-solid fa-masks-theater"></i></a>
+        <a href=""> Essence Drive-In</a>
+     </div>
+     <div class="menu">
+        <a  href="index.html" >Home</a>
+        <a   href="about.html" >About</a>
+        <a   href="contact.html" >Contact</a>
+        <a href="login.html"><span><i class="fa-solid fa-user"></i></span>Login</a>
+     </div>
+     <div class="line">
+      <label for="click" id="hamburger"><i class="fa-solid fa-bars"></i></label>
+      <i id="cancel" class="fa-solid fa-xmark"></i>
+     </div>
+  </div>
+    <div class="main">
+        <div class="about">
+            <h1>Essence Drive-In </h1>
+            <h1>Movie Theater</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde, laborum reiciendis? Labore illo, dolorem ex reprehenderit officiis rerum deleniti repudiandae.</p>
+            <a href=""><button>Buy Tickets</button></a>
+        </div>
+        
+    </div>
+    <div class="card">
+        <div class="heading">
+            <h3>Now Playing</h3>   
+            
+        </div>
+        
+         <div class="movies">
+            <div class="box">
+                <div class="image">
+                    <img src="images/Screenshot 2024-04-10 172644.png" alt="">
+                    <h2>Modern Day Love</h2>
+                    <h3>Romantic Comedy</h3>
+                </div>
+              
+         </div>
+         <div class="box">
+            <div class="image">
+                <img src="images/Screenshot 2024-04-10 172653.png" alt="">
+                <h2>Future Glitch</h2>
+                <h3>Action</h3>
+            </div>
+          
+     </div>
+     <div class="box">
+        <div class="image">
+            <img src="images/Screenshot 2024-04-10 172713.png" alt="">
+            <h2>Paper Camp </h2>
+            <h3>Kids</h3>
+        </div>
+      
+ </div>
+ <div class="box">
+    <div class="image">
+        <img src="images/Screenshot 2024-04-10 172946.png" alt="">
+        <h2>Dark Ocean</h2>
+        <h3>Horror</h3>
+    </div>
+  
+</div>
+    </div>
+    <div class="btn">
+        <a href=""><button>View Showtimes</button></a>
+    </div>
+    <div class="trailer">
+         <div class="soon">
+            <h3>Coming Soon</h3>
+         
+         </div>
+         <div class="watch">
+              <div class="first">
+                 <button>Kids</button>
+                 <h2>Jungle Fever 3</h2>
+                 <h4><span><i class="fa-regular fa-circle-play"></i></span>Watch Trailer</h4>
+              </div>
+              <div class="first">
+                <button>Action</button>
+                <h2>Fast Track</h2>
+                <h4><span><i class="fa-regular fa-circle-play"></i></span>Watch Trailer</h4>
+             </div>
+             <div class="first">
+                <button>Comedy</button>
+                <h2>Jumping Hoops</h2>
+                <h4><span><i class="fa-regular fa-circle-play"></i></span>Watch Trailer</h4>
+             </div>
+         </div>
+    </div>
+    </div>
+    <div class="work">
+        <div class="write">
+            <h4>How Its Work</h4>
+        </div>
+        <div class="row">
+             <div class="ticket">
+                <h2>01</h2>
+                <img src="images/ticket.png" alt="" width="200px">
+                <h3>Buy your Tickets</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+             </div>
+             <div class="ticket">
+                <h2>02</h2>
+                <img src="images/paisa.png" alt="" width="200px">
+                <h3>Park Your Car</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+             </div>
+             <div class="ticket">
+                <h2>03</h2>
+                <img src="images/music.png" alt="" width="200px">
+                <h3>Set Up Tunes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+             </div>
+             <div class="ticket">
+                <h2>04</h2>
+                <img src="images/watch.png" alt="" width="200px">
+                <h3>Enjoy The Show</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+             </div>
+        </div>
+        <div class="h-line">
+                
+        </div>
+        <div class="meesagebox">
+        <div class="message">
+            <h2>Stay Up-To-Date</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga libero vitae nesciunt error sed corporis id, in eaque quibusdam commodi</p>
+            <h1>Email*</h1>
+            <input type="text" name="" id="" placeholder="Enter Your Email ">
+            <button>Join </button>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <div class="footerrow">
+         <div class="footerlogo">
+             <a href=""><i class="fa-solid fa-masks-theater"></i></a>
+             <a href=""> Essence Drive-In</a>
+          </div>
+          <div class="footermenu">
+             <h3>Quick Menu</h3>
+             <a href="index.html">Home</a>
+             <a href="about.html">About</a>
+             <a href="contact.html">Contact</a>
+             <a href="login.html">Login</a>
+          </div>
+          <div class="footercontact">
+             <h3>Contact</h3>
+               <p>500 Terry Francine Street 
+                 San Francisco, CA 94158
+                 info@mysite.com
+                 Tel: 123-456-7890</p>
+          </div>
+          <div class="footerlinks">
+             <a href="#"><i class="fa-brands fa-instagram"></i></a>
+             <a href="#"><i class="fa-brands fa-facebook"></i></a>
+             <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+        <hr>
+        <div class="footercopy">
+         <p>@All copyright reserved by Vikas Chauhan</p>
+        </div>
+     </div>
+</body>
+<script src="logic.js"></script>
+</html>
+
+
