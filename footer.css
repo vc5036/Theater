@@ -1,0 +1,199 @@
+
+          *{
+            font-family: "Poppins", sans-serif;
+          }
+           .footer{
+            width: 100%;
+            
+            background-color: #3843CD;
+           
+        
+           }
+           .footerrow{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            /* margin-top: 20px; */
+           }
+           .footerlogo{
+            display: flex;
+            align-items: center;
+           margin-right: 50px;
+           }
+           .footerlogo a{
+            text-decoration: none;
+            color: white;
+            font-size: 28px;
+            font-family: cursive;
+            margin-left: 20px;
+           }
+           .footerlogo i{
+            font-size: 28px;
+            color: white;
+
+           }
+           .footermenu{
+            display: flex;
+            flex-direction: column;
+           margin-top: 60px;
+           }
+           .footermenu h3{
+            color: white;
+           }
+           .footermenu a{
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 10px;
+           }
+           .footercontact{
+            display: flex;
+            flex-direction: column;
+        margin-top: 30px;
+            width: 200px;
+           }
+           .footercontact h3{
+            color: white;
+           }
+           .footercontact p{
+            margin-top: 10px;
+            color: white;
+      
+           }
+           .footerlinks{
+            margin-top: 100px;
+           }
+           .footerlinks i{
+            font-size: 22px;
+            padding-right: 10px;
+            color: white;
+            transition: 0.5s;
+           }
+           .footerlinks i:hover{
+            scale: 1.2;
+            color:#bc51af;
+           }
+           hr{
+            margin-top: 30px;
+            width: 90%;
+            margin:  30px auto 0;
+           }
+           .footercopy{
+              
+            height: 9vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            
+            margin-top: 0px;
+        
+         
+           }
+          
+           @media screen and (max-width:930px){
+            .footer{
+                /* margin-top: 230px; */
+              
+                width: 100%;
+            }
+            }
+            @media screen and (max-width:920px){
+
+                
+                .footerrow{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+           
+           }
+           
+           .footerlinks{
+            margin-top:20px;
+            margin-left: 50px;
+           }
+           .footerlogo{
+            margin-top: 40px;
+            margin-left: 50px;
+           }
+           .footerlogo i{
+              margin-left: -10px;
+              
+           
+           }
+           .footerlogo a{
+            margin-left: 10px;
+           }
+           .footermenu{
+            margin-left: 50px;
+           }
+           .footercontact{
+            margin-left: 50px;
+           }
+           
+           
+        }
+       
+
+           @media screen and (max-width:810px){
+            
+            
+            
+            
+           .links{
+            margin-top:50px;
+            margin-left: 50px;
+           }
+           .footerlogo{
+            margin-top: 40px;
+            margin-left: 50px;
+           }
+           .footerlogo i{
+              margin-left: -10px;
+              
+           
+           }
+           .footerlogo a{
+            margin-left: 10px;
+           }
+           .footermenu{
+            margin-left: 50px;
+           }
+           .footercontact{
+            margin-left: 50px;
+           }
+          
+           }
+           @media screen and (max-width:630px){
+            /* .footerrow{
+            margin-top: 300px;
+       
+           } */
+           }
+           @media screen and (max-width:460px){
+            /* .footerrow{
+            margin-top: 1640px;
+       
+           } */
+           }
+           @media screen and (max-width:370px){
+            /* .footerrow{
+            margin-top: 1600px;
+       
+           } */
+           .footer a{
+            font-size: 23px;
+           }
+           .footercopy{
+             font-size: 13px;
+             
+           }
+           .footermenu a{
+            font-size: 16px;
+           }
+           
+           }
+           
+    
